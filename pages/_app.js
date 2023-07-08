@@ -50,12 +50,12 @@ const App = ({ Component, pageProps }) => {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
-        <Script id="Adsense-id" data-ad-client="ca-pub-987************676"
+      </Head>
+      <Script id="Adsense-id" data-ad-client="ca-pub-987************676"
           async strategy="afterInteractive"
           onError={ (e) => { console.error('Script failed to load', e) }}
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        />
-      </Head>
+      />
       <Component {...pageProps} />
     </JsonContext>
   );
